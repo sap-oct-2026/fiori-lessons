@@ -1,0 +1,14 @@
+<mvc:View controllerName="f1intro.controller.ViewMain"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <VBox id="contentBox" class="sapUiSmallMargin">
+            <Title id="welcomeTitle" text="Welcome to SAPUI5" />
+            <Text id="welcomeText" text="This is my first SAPUI5 application." />
+            <HBox id="buttonBox">
+                <Button id="sayHelloButton" text="Say Hello" press=".onSayHello" />
+                <Button id="sayGoodbyeButton" text="Say Goodbye" press=".onSayGoodbye" />
+            </HBox>
+        </VBox>
+    </Page>
+</mvc:View>
