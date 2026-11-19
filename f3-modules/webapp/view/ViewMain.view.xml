@@ -1,0 +1,11 @@
+<mvc:View controllerName="f3modules.controller.ViewMain"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <VBox id="vbox1">
+            <Text id="textResult" text="The result goes here" class="sapUiSmallMarginBottom"/>
+            <Input id="inputName" value="nothing yet"  />
+            <Button id="buttonSubmit" text="Submit" press=".onSubmit" />
+        </VBox>
+    </Page>
+</mvc:View>
