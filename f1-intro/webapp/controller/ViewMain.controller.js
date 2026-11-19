@@ -4,7 +4,9 @@ sap.ui.define(
     "use strict";
 
     return Controller.extend("f1intro.controller.ViewMain", {
-      onInit() {},
+      onInit() {
+         MessageToast.show("The Controller has started!");
+      },
 
       onSayHello() {
         MessageToast.show("HELLO!");
@@ -16,3 +18,4 @@ sap.ui.define(
     });
   },
 );
+
