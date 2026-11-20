@@ -1,0 +1,19 @@
+<mvc:View xmlns:f="sap.f" controllerName="f4inputevents.controller.ViewMain"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+    <Page id="page" title="{i18n>title}">
+        <VBox id="vbox1">
+            <Label id="labelName" text="Name"/>
+            <Input id="inputName" liveChange=".onInputNameChange" />
+
+            <Text id="textResult" text="Nothing yet..." />
+
+            <Select id="selectColor" change=".onSelectColor">
+                <core:Item id="colorRed" key="Red" text="Red" />
+                <core:Item id="colorGreen" key="Green" text="Green" />
+                <core:Item id="colorBlue" key="Blue" text="Blue" />
+            </Select>
+        </VBox>
+    </Page>
+</mvc:View>

@@ -1,0 +1,30 @@
+<mvc:View controllerName="f5simpleform.controller.ViewMain"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    xmlns:f="sap.ui.layout.form"
+    >
+    <Page id="page" title="{i18n>title}">
+        <f:SimpleForm id="employeeForm" editable="true" layout="ResponsiveGridLayout" class="sapUiSmallMargin">
+            <Label id="employeeNameLabel" labelFor="employeeNameInput" text="Name" required="true" />
+            <Input id="employeeNameInput" placeholder="Enter employee name" />
+
+            <Label id="departmentLabel" labelFor="departmentSelect" text="Department" />
+            <Select id="departmentSelect" selectedKey="IT">
+                <items>
+                    <core:Item id="departmentItemIT" key="IT" text="IT" />
+                    <core:Item id="departmentItemSales" key="Sales" text="Sales" />
+                    <core:Item id="departmentItemFinance" key="Finance" text="Finance" />
+                </items>
+            </Select>
+
+            <Label id="checkStatusLabel" text="Check result" />
+            <ObjectStatus id="checkStatus" text="Not checked" state="Information" icon="sap-icon://information" />
+        </f:SimpleForm>
+        
+        <HBox id="employeeActionBox" class="sapUiSmallMargin" wrap="Wrap">
+            <Button id="checkEmployeeButton" text="Check Employee" type="Accept" press=".onCheckEmployee" class="myclass"/>
+            <Button id="clearEmployeeButton" text="Clear" press=".onClearEmployee" />
+        </HBox>
+    </Page>
+</mvc:View>
