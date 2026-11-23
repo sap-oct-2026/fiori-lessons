@@ -1,0 +1,27 @@
+<mvc:View 
+    controllerName="f6bindingintro.controller.ViewMain"
+    
+    xmlns="sap.m"
+    
+    xmlns:mvc="sap.ui.core.mvc"
+    
+    xmlns:form="sap.ui.layout.form"
+    
+    >
+    <Page id="page" title="{i18n>title}">
+        <form:SimpleForm id="sf1" class="sapUiSmallMargin">
+            <Label id="labelName" text="Name" />
+            <Input id="inputName" value="{/name}" valueLiveUpdate="true" />
+            <Label id="labelEmail" text="Email" />
+            <Input id="inputEmail" value="{/email}" valueLiveUpdate="true" />
+        </form:SimpleForm>
+
+        <HBox id="hbox1" class="sapUiSmallMargin">
+            <Button id="buttonTest" text="Test" press=".onTest" />
+            <Button id="buttonClear" text="Clear" press=".onClear" class="sapUiTinyMarginBegin" />
+        </HBox>
+        
+        <Text id="textPreview" text="Preview Area" />
+    </Page>
+
+</mvc:View>
