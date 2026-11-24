@@ -1,0 +1,144 @@
+{
+  "products": [
+    {
+      "name": "iPhone Duo",
+      "price": 2000
+    },
+    {
+      "name": "Gameboy",
+      "price": 100
+    },
+    {
+      "name": "SNES",
+      "price": 100
+    },
+    {
+      "name": "PS5",
+      "price": 100
+    },
+    {
+      "name": "Xbox Series X",
+      "price": 500
+    },
+    {
+      "name": "Nintendo Switch",
+      "price": 300
+    },
+    {
+      "name": "MacBook Pro",
+      "price": 2500
+    },
+    {
+      "name": "MacBook Air",
+      "price": 1200
+    },
+    {
+      "name": "iPad Pro",
+      "price": 1100
+    },
+    {
+      "name": "Samsung Galaxy S25",
+      "price": 1000
+    },
+    {
+      "name": "AirPods Pro",
+      "price": 250
+    },
+    {
+      "name": "Apple Watch",
+      "price": 400
+    },
+    {
+      "name": "Sony WH-1000XM5",
+      "price": 350
+    },
+    {
+      "name": "Nintendo 3DS",
+      "price": 180
+    },
+    {
+      "name": "PlayStation 4",
+      "price": 250
+    },
+    {
+      "name": "Xbox One",
+      "price": 200
+    },
+    {
+      "name": "Steam Deck",
+      "price": 550
+    },
+    {
+      "name": "Gaming PC",
+      "price": 1800
+    },
+    {
+      "name": "Dell UltraSharp Monitor",
+      "price": 600
+    },
+    {
+      "name": "Logitech MX Master 3S",
+      "price": 100
+    },
+    {
+      "name": "Mechanical Keyboard",
+      "price": 150
+    },
+    {
+      "name": "Canon EOS R6",
+      "price": 2500
+    },
+    {
+      "name": "GoPro Hero",
+      "price": 400
+    },
+    {
+      "name": "Kindle Paperwhite",
+      "price": 150
+    },
+    {
+      "name": "Bose SoundLink Speaker",
+      "price": 200
+    },
+    {
+      "name": "Samsung 4K TV",
+      "price": 900
+    },
+    {
+      "name": "Dyson V15 Vacuum",
+      "price": 700
+    },
+    {
+      "name": "Philips Air Fryer",
+      "price": 180
+    },
+    {
+      "name": "Coffee Machine",
+      "price": 350
+    },
+    {
+      "name": "Electric Scooter",
+      "price": 600
+    },
+    {
+      "name": "LEGO Millennium Falcon",
+      "price": 850
+    },
+    {
+      "name": "Polaroid Camera",
+      "price": 120
+    },
+    {
+      "name": "Fitbit Charge",
+      "price": 130
+    },
+    {
+      "name": "Portable SSD 2TB",
+      "price": 180
+    },
+    {
+      "name": "Wireless Charging Station",
+      "price": 80
+    }
+  ]
+}

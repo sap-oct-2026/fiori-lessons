@@ -7,19 +7,18 @@
 
         <List id="productList" headerText="My Products" items="{/products}">
             <!-- <StandardListItem title="{name}" /> -->
-            <CustomListItem>
-                <HBox>
-                    <VBox>
-                        <Label text="{name}" />
-                        <Label text="{price}" />
+            <CustomListItem id="cl1">
+                <HBox id="hb1">
+                    <VBox id="vb1">
+                        <Label id="labelName" text="{name}" />
+                        <Label id="labelPrice" text="{price}" />
                     </VBox>
-                    <Button text="EDIT" />
-                    <Button text="DELETE" />
+                    <Button id="buttonEdit" text="EDIT" />
+                    <Button id="buttonDelete" text="DELETE" />
                 </HBox>
             </CustomListItem>
         </List>
 
-        
-
+        <Button id="button1" press=".onButton1" text="ADD" />
     </Page>
 </mvc:View>
