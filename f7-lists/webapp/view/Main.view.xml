@@ -1,0 +1,25 @@
+<mvc:View controllerName="f7lists.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+
+        <Label id="label1" text="{/products/1/name}" />
+
+        <List id="productList" headerText="My Products" items="{/products}">
+            <!-- <StandardListItem title="{name}" /> -->
+            <CustomListItem>
+                <HBox>
+                    <VBox>
+                        <Label text="{name}" />
+                        <Label text="{price}" />
+                    </VBox>
+                    <Button text="EDIT" />
+                    <Button text="DELETE" />
+                </HBox>
+            </CustomListItem>
+        </List>
+
+        
+
+    </Page>
+</mvc:View>
