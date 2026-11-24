@@ -7,23 +7,23 @@ sap.ui.define([
     return Controller.extend("f7lists.controller.Main", {
         onInit() {
             const data = {
-                products: [
+                books: [
                     {
-                        name: "iPhone Duo",
-                        price: 2000
+                        title: "Momo",
+                        author: "Michael Ende",
+                        
                     },
                     {
-                        name: "Gameboy",
-                        price: 100
+                        title: "Ronja the Robber's Daughter",
+                        author: "Astrid Lindgren",
+                        
                     },
                     {
-                        name: "SNES",
-                        price: 100
+                        title: "The Mysterious Island",
+                        author: "Jules Verne",
+                        
                     },
-                    {
-                        name: "PS5",
-                        price: 100
-                    },
+                    
                 ]
             };
             const model = new JSONModel(data);
@@ -32,8 +32,7 @@ sap.ui.define([
 
             // console.log(this.getView().getModel().oData.products[1].name);
             // const x = this.getView().getModel().getProperty("/products")[2].name;
-            const x = this.getView().getModel().getProperty("/products/0/name");
-            console.log(x);
+           
 
         }
     });

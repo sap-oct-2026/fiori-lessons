@@ -5,18 +5,10 @@
 
         <Label id="label1" text="{/products/1/name}" />
 
-        <List id="productList" headerText="My Products" items="{/products}">
-            <!-- <StandardListItem title="{name}" /> -->
-            <CustomListItem>
-                <HBox>
-                    <VBox>
-                        <Label text="{name}" />
-                        <Label text="{price}" />
-                    </VBox>
-                    <Button text="EDIT" />
-                    <Button text="DELETE" />
-                </HBox>
-            </CustomListItem>
+        <List id="bookList" headerText="My Books" items="{/books}">
+            <StandardListItem
+                title="{title}"
+                description="{author}" />
         </List>
 
         
