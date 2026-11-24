@@ -6,21 +6,33 @@ sap.ui.define([
 
     return Controller.extend("f6bindingintro.controller.ViewMain", {
         onInit() {
-            const userModel = new JSONModel({
+            const userData = {
                 name: "",
                 email: ""
-            });
+            };
 
+            const userModel = new JSONModel(userData);
             this.getView().setModel(userModel);
         },
 
         onTest() {
-            const userData = this.getView().getModel().oData;
-            console.log(userData);
+            // const name = this.getView().getModel().oData.name;
+            // const email = this.getView().getModel().oData.email;
+            // const { name, email } = this.getView().getModel().oData;
+
+            const userModel = this.getView().getModel();
+            
+            const name = userModel.getProperty("/name");
+            const email = userModel.getProperty("/email");
+            
+            const greeting = `Hello ${name} your email is ${email}`;
+            this.byId("textPreview").setText(greeting);
         },
 
         onClear() {
-            
+            const userModel = this.getView().getModel();
+            userModel.setProperty("/name", "");
+            userModel.setProperty("/email", "");
         }
     });
 });
