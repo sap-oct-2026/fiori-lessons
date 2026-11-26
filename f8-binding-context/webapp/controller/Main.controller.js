@@ -20,6 +20,12 @@ sap.ui.define([
 
             this.getView().setModel(oModel);
 
+            const oAddressPanelModel = new JSONModel({
+                visibility: false,
+                address: {}
+            });
+
+            this.getView().setModel(oAddressPanelModel, "ap");
         },
         onNamePress(oEvent) {
 
@@ -27,6 +33,15 @@ sap.ui.define([
             const user = context.getObject();
 
             MessageToast.show("Hi " + user.name);
+
+            // const adressText = `Street: ${user.address.street}, City: ${user.address.city}`;
+            // this.byId("textMessage").setText(adressText);
+
+            this.getView().getModel("ap").setProperty("/visibility", true);
+            this.getView().getModel("ap").setProperty("/address", user.address);
+        },
+        onClosePanel() {
+            this.getView().getModel("ap").setProperty("/visibility", false);
         }
     });
 });

@@ -1,9 +1,97 @@
 <mvc:View controllerName="f8bindingcontext.controller.Main"
     xmlns:mvc="sap.ui.core.mvc"
+    xmlns:core="sap.ui.core"
     xmlns="sap.m">
     <Page id="page" title="{i18n>title}">
-        <List id="userList" items="{/}">
-            <StandardListItem title="{name}" press=".onNamePress" type="Active" />
-        </List>
+        <VBox id="vbox1">
+        <Panel
+            class="sapUiSmallMargin"
+            visible="{= !${ap>/visibility} }">
+            <Text text="Select a user to view the address" class="sapUiSmallMargin" />
+        </Panel>
+        <Panel
+            visible="{ap>/visibility}"
+            expandable="false"
+            class="sapUiNoContentPadding sapUiResponsiveMargin"
+            width="auto">
+
+            <headerToolbar>
+                <OverflowToolbar>
+                    <core:Icon
+                        src="sap-icon://map"
+                        size="1.4rem"
+                        color="#0A6ED1"/>
+                    <Title
+                        text="Address Details"
+                        level="H2"/>
+                    <ToolbarSpacer/>
+                    <ObjectStatus
+                        text="Location"
+                        state="Success"
+                        icon="sap-icon://map-2"/>
+                </OverflowToolbar>
+            </headerToolbar>
+
+            <content>
+                <Button text="X" press=".onClosePanel" />
+                <VBox class="sapUiMediumMargin" renderType="Bare">
+
+                    <Title
+                        text="{ap>/address/street}"
+                        level="H1"/>
+
+                    <Text
+                        text="{ap>/address/suite}"
+                        class="sapUiSmallMarginBottom"/>
+
+                    <HBox
+                        alignItems="Center"
+                        class="sapUiSmallMarginBottom">
+                        <core:Icon
+                            src="sap-icon://map-2"
+                            color="#0A6ED1"
+                            class="sapUiTinyMarginEnd"/>
+                        <Text
+                            text="{ap>/address/city}, {ap>/address/zipcode}"/>
+                    </HBox>
+
+                    <Toolbar
+                        design="Transparent"
+                        class="sapUiSmallMarginTop">
+                        <Title
+                            text="Geographical Coordinates"
+                            level="H4"/>
+                    </Toolbar>
+
+                    <HBox
+                        justifyContent="SpaceBetween"
+                        class="sapUiSmallMarginBottom">
+
+                        <VBox>
+                            <Label text="Latitude"/>
+                            <ObjectNumber
+                                number="{ap>/address/geo/lat}"
+                                unit="°"/>
+                        </VBox>
+
+                        <VBox>
+                            <Label text="Longitude"/>
+                            <ObjectNumber
+                                number="{ap>/address/geo/lng}"
+                                unit="°"/>
+                        </VBox>
+
+                    </HBox>
+
+                </VBox>
+            </content>
+        </Panel>
+
+
+            <List id="userList" items="{/}">
+                <StandardListItem title="{name}" press=".onNamePress" type="Active" />
+            </List>
+
+        </VBox>
     </Page>
 </mvc:View>
