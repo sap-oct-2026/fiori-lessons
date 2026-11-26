@@ -1,0 +1,9 @@
+<mvc:View controllerName="f8bindingcontext.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <List id="userList" items="{/}">
+            <StandardListItem title="{name}" press=".onNamePress" type="Active" />
+        </List>
+    </Page>
+</mvc:View>
