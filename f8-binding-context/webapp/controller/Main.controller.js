@@ -14,7 +14,7 @@ sap.ui.define([
     // when you click a user
     return Controller.extend("f8bindingcontext.controller.Main", {
         onInit() {
-
+            
             const oModel = new JSONModel();
             oModel.loadData("/model/users.json");
 

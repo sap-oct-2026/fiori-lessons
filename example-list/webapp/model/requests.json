@@ -1,0 +1,33 @@
+{
+    "nextId": 5,
+    "requests": [
+        {
+            "id": 1,
+            "title": "Laptop will not start",
+            "category": "Hardware",
+            "priority": "High",
+            "status": "Open"
+        },
+        {
+            "id": 2,
+            "title": "Cannot access email",
+            "category": "Account",
+            "priority": "Medium",
+            "status": "In Progress"
+        },
+        {
+            "id": 3,
+            "title": "Printer is out of paper",
+            "category": "Equipment",
+            "priority": "Low",
+            "status": "Resolved"
+        },
+        {
+            "id": 4,
+            "title": "Wi-Fi disconnects frequently",
+            "category": "Network",
+            "priority": "Medium",
+            "status": "Open"
+        }
+    ]
+}
